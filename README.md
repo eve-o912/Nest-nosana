@@ -456,3 +456,4 @@ This template is open source and available under the [MIT License](./LICENSE).
 ---
 
 **Built with ElizaOS · Deployed on Nosana · Powered by Qwen3.5**
+# nest_nosana
