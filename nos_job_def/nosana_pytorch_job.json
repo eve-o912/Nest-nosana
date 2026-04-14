@@ -1,0 +1,32 @@
+{
+  "version": "0.1",
+  "type": "container",
+  "ops": [
+    {
+      "type": "container/run",
+      "id": "Pytorch",
+      "args": {
+        "image": "docker.io/nosana/pytorch-jupyter:2.0.0",
+        "cmd": [
+          "jupyter",
+          "lab",
+          "--ip=0.0.0.0",
+          "--port=8888",
+          "--no-browser",
+          "--allow-root",
+          "--ServerApp.token=''",
+          "--ServerApp.password=''"
+        ],
+        "expose": 8888,
+        "gpu": true
+      }
+    }
+  ],
+  "deployment_id": "dan2CW3HkudiCwA7wMYf2nDPAvidU4yUJrpYUcFawum",
+  "meta": {
+    "trigger": "deployment-manager",
+    "system_requirements": {
+      "required_vram": 4
+    }
+  }
+}
